@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuestIQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME SCREEN -->
+<div id="home" class="screen">
+
+    <div class="home-container">
+        <h1 class="title">QuestIQ</h1>
+        <p class="tagline">Every clue brings you closer 🧠</p>
+
+        <div class="instructions">
+            <h3>How to Play</h3>
+            <ul>
+                <li>✔ +10 points for correct answer</li>
+                <li>💡 Hint costs -5 points</li>
+                <li>⏱ 30 seconds per level</li>
+                <li>❤️ You have 3 lives</li>
+                <li>❌ Wrong answer or timeout = lose life</li>
+                <li>🏆 Complete all levels to win</li>
+            </ul>
+        </div>
+
+        <button onclick="startGame()" class="start-btn">Start Game</button>
+    </div>
+
+</div>
+<!-- GAME SCREEN -->
+<div id="game" class="screen hidden">
+
+    <!-- Top bar -->
+    <div class="top-bar">
+        <h2 id="level">Level 1</h2>
+        <p id="timer">⏱ 30s</p>
+    </div>
+
+    <!-- Clue -->
+    <div class="clue-box">
+        <p id="clue">Clue appears here</p>
+    </div>
+
+    <!-- Input -->
+    <input id="answer" placeholder="Enter answer">
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button onclick="checkAnswer()">Submit</button>
+        <button onclick="useHint()">Hint</button>
+    </div>
+
+    <!-- Status -->
+    <div class="status">
+        <p id="result"></p>
+        <p id="score">Score: 0</p>
+        <p id="lives">Lives: ❤️❤️❤️</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
