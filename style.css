@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+
+    background: radial-gradient(circle at 20% 20%, #1e3a8a, #020617 60%),
+                radial-gradient(circle at 80% 80%, #9333ea, transparent 50%);
+
+    background-color: #020617;
+}
+
+
+.screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.home-container {
+    text-align: center;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 3.5rem;
+    color: gold;
+    text-shadow: 0 0 20px gold;
+}
+
+.tagline {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.instructions {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.instructions h3 {
+    text-align: center;
+    color: gold;
+}
+
+.instructions li {
+    margin: 8px 0;
+}
+
+.start-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background: linear-gradient(45deg, gold, orange);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px orange;
+}
+
+#game {
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin: auto;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.clue-box {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    width: 420px;
+    margin: 20px auto;
+
+    border: 1px solid rgba(255, 215, 0, 0.2);
+
+    box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.15),
+        0 0 40px rgba(147, 51, 234, 0.15);
+}
+
+#answer {
+    padding: 14px;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+
+    background: #020617;
+    color: white;
+
+    margin-bottom: 25px;
+    outline: none;
+
+    text-align: center;
+}
+
+#answer:focus {
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 22px;
+    background: linear-gradient(45deg, gold, orange);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 0 15px orange;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.status {
+    margin-top: 15px;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
